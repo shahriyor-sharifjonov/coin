@@ -158,6 +158,10 @@ const changeBtn = document.querySelectorAll('.change-content');
 const changeContent = document.querySelectorAll('.change-target');
 changeBtn.forEach(el => {
   el.addEventListener('click', e => {
+    document.querySelectorAll('.coins__drop-content.active').forEach(content => {
+      content.classList.remove('active');
+      document.querySelector('.coins__items').classList.remove('toggled');
+    })
     if(el.classList.contains('coins__drop-item')){
       const parent = el.parentElement;
       const btn = el.parentElement.parentElement.querySelector('.coins__drop-btn');
@@ -180,6 +184,11 @@ changeBtn.forEach(el => {
 const cDrop = document.querySelectorAll('.coins__drop-btn');
 cDrop.forEach(drop => {
   drop.addEventListener('click', el => {
+    document.querySelectorAll('.coins__drop-content.active').forEach(content => {
+      content.classList.remove('active');
+      document.querySelector('.coins__items').classList.remove('toggled');
+    })
+    document.querySelector('.coins__items').classList.toggle('toggled');
     const content = drop.parentElement.querySelector('.coins__drop-content');
     const defolt = content.querySelector('.default');
     content.classList.toggle('active');
@@ -196,6 +205,7 @@ window.addEventListener('click', e => {
   cDrop.forEach(drop => {
     if(drop.classList.contains('active')){
       if(!e.target.classList.contains('coins__drop-btn')){
+        document.querySelector('.coins__items').classList.remove('toggled');
         const content = drop.parentElement.querySelector('.coins__drop-content');
         content.classList.remove('active');
       }
