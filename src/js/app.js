@@ -158,7 +158,34 @@ const changeBtn = document.querySelectorAll('.change-content');
 const changeContent = document.querySelectorAll('.change-target');
 changeBtn.forEach(el => {
   el.addEventListener('click', e => {
-    const target = el.getAttribute('data-target');
+    if(el.classList.contains('coins__drop-item')){
+      const parent = el.parentElement;
+      const btn = el.parentElement.parentElement.querySelector('.coins__drop-btn');
+      btn.classList.add('active');
+      el.parentElement.classList.remove('active');
+      const defaults = parent.querySelectorAll('.coins__item.default');
+      defaults.forEach(el => {
+        el.classList.remove('default');
+      });
+      console.log(el);
+      el.classList.add('default');
+    }
+    const target = el.getAttribute('data-target'); 
+    changeContent.forEach(content => {
+      content.classList.remove('active')
+    })
+    document.getElementById(target).classList.add('active');
+  })
+})
+
+const cDrop = document.querySelectorAll('.coins__drop-btn');
+cDrop.forEach(drop => {
+  drop.addEventListener('click', el => {
+    const content = drop.parentElement.querySelector('.coins__drop-content');
+    const defolt = content.querySelector('.default');
+    content.classList.toggle('active');
+    defolt.classList.add('active');
+    const target = defolt.getAttribute('data-target');
     changeContent.forEach(content => {
       content.classList.remove('active')
     })

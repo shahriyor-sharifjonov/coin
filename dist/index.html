@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220509160801">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220509192942">
     <title>Document</title>
   </head>
   <body class="dark"> 
@@ -49,9 +49,9 @@
                         <div class="header__form-res-item-left">
                           <div class="header__form-res-item-img"><picture><source srcset="img/shiba.webp" type="image/webp"><img src="img/shiba.png" alt="" draggable="false" loading="lazy"></picture></div><span class="header__form-res-item-title">MAMA SHIBA</span>
                         </div><span class="header__form-res-item-short">MAMA</span></a><a class="header__form-res-item" href="#!">
-                        <div class="header__form-res-item-left">
-                          <div class="header__form-res-item-img"><picture><source srcset="img/shiba.webp" type="image/webp"><img src="img/shiba.png" alt="" draggable="false" loading="lazy"></picture></div><span class="header__form-res-item-title">MAMA SHIBA</span>
-                        </div><span class="header__form-res-item-short">MAMA</span></a>
+                        <div class="header__form-res-item-left"> 
+                          <div class="header__form-res-item-img"> <picture><source srcset="img/shiba.webp" type="image/webp"><img src="img/shiba.png" alt="" draggable="false" loading="lazy"></picture></div><span class="header__form-res-item-title">MAMA SHIBA </span>
+                        </div><span class="header__form-res-item-short">MAMA </span></a>
                     </div>
                   </form>
                   <div class="header__icons"> <a class="header__icon" href="https://telegram.com"><img src="img/header-icon-twitter.svg" alt="" draggable="false" loading="lazy"></a><a class="header__icon" href="https://twitter.com"><img src="img/header-icon-telegram.svg" alt="" draggable="false" loading="lazy"></a><a class="header__icon" href="https://discord.com"><img src="img/header-icon-discord.svg" alt="" draggable="false" loading="lazy"></a></div>
@@ -364,19 +364,25 @@
                       <div class="coins__list-container">
                         <div class="coins__list"> 
                           <button class="coins__item change-content active" type="button" data-target="hot"><img src="img/coins-icon-1.svg" alt="" draggable="false" loading="lazy"> Today’s Hot</button>
-                          <button class="coins__item change-content" type="button" data-target="new"><img src="img/coins-icon-2.svg" alt="" draggable="false" loading="lazy"> New</button>
+                          <div class="coins__drop">
+                            <button class="coins__drop-btn coins__item" type="button"><img src="img/coins-icon-2.svg" alt="" draggable="false" loading="lazy"> New</button>
+                            <div class="coins__drop-content">                                                                                                         
+                              <button class="coins__drop-item change-content coins__item default" type="button" data-target="new"><img src="img/coins-icon-2.svg" alt="" draggable="false" loading="lazy"> New</button>
+                              <button class="coins__drop-item change-content coins__item" type="button" data-target="recently"><img src="img/prices-img-3.svg" alt="" draggable="false" loading="lazy"> Recently Added</button>
+                            </div>
+                          </div>
                           <button class="coins__item change-content" type="button" data-target="best"><img src="img/coins-icon-3.svg" alt="" draggable="false" loading="lazy"> All Time Best</button>
                           <button class="coins__item change-content" type="button" data-target="gainer"><img src="img/coins-icon-4.svg" alt="" draggable="false" loading="lazy"> 24h Gainer</button>
                         </div>
                       </div>
-                      <form class="header__form" action="">
+                      <form class="header__form" action=""> 
                         <input class="header__input" type="text" placeholder="Search">
-                        <button type="submit"><img src="img/header-icon-search.svg" alt="" draggable="false" loading="lazy"></button>
+                        <button type="submit"> <img src="img/header-icon-search.svg" alt="" draggable="false" loading="lazy"></button>
                       </form>
                     </div>
                     <div class="quotes__content"> 
                       <div class="quotes__header"> 
-                        <ul class="quotes__list">
+                        <ul class="quotes__list"> 
                           <li class="quotes__li quotes__li_coins"><img src="img/quotes-icon-diamond.svg" alt="" draggable="false" loading="lazy"> Promoted coins </li>
                           <li class="quotes__li quotes__li_symbol"><img src="img/quotes-icon-symbol.svg" alt="" draggable="false" loading="lazy"> Symbol</li>
                           <li class="quotes__li quotes__li_hour"><img src="img/quotes-icon-statistic.svg" alt="" draggable="false" loading="lazy"> 1h</li>
@@ -502,6 +508,90 @@
 <path d="M6.25 8.5C6.25 8.63807 6.13807 8.75 6 8.75C5.86193 8.75 5.75 8.63807 5.75 8.5L6.25 8.5ZM5.75 1.5C5.75 1.36193 5.86193 1.25 6 1.25C6.13807 1.25 6.25 1.36193 6.25 1.5L5.75 1.5ZM5.75 8.5L5.75 1.5L6.25 1.5L6.25 8.5L5.75 8.5Z" fill="#E53B35"/>
 <path d="M6.21437 10.6427L7.13652 9.1058C7.29649 8.83919 7.10444 8.5 6.79352 8.5L5.20648 8.5C4.89556 8.5 4.70351 8.83919 4.86348 9.1058L5.78563 10.6427C5.88273 10.8045 6.11727 10.8045 6.21437 10.6427Z" fill="#E53B35"/>
 </svg>1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="quotes__items change-target" id="recently"> 
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p"><img src="img/quotes-icon-up.svg" alt="" draggable="false" loading="lazy"> 1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p red">
+                                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.25 8.5C6.25 8.63807 6.13807 8.75 6 8.75C5.86193 8.75 5.75 8.63807 5.75 8.5L6.25 8.5ZM5.75 1.5C5.75 1.36193 5.86193 1.25 6 1.25C6.13807 1.25 6.25 1.36193 6.25 1.5L5.75 1.5ZM5.75 8.5L5.75 1.5L6.25 1.5L6.25 8.5L5.75 8.5Z" fill="#E53B35"/>
+<path d="M6.21437 10.6427L7.13652 9.1058C7.29649 8.83919 7.10444 8.5 6.79352 8.5L5.20648 8.5C4.89556 8.5 4.70351 8.83919 4.86348 9.1058L5.78563 10.6427C5.88273 10.8045 6.11727 10.8045 6.21437 10.6427Z" fill="#E53B35"/>
+</svg>1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p"><img src="img/quotes-icon-up.svg" alt="" draggable="false" loading="lazy"> 1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p"><img src="img/quotes-icon-up.svg" alt="" draggable="false" loading="lazy"> 1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p"><img src="img/quotes-icon-up.svg" alt="" draggable="false" loading="lazy"> 1.65%</span></div>
+                                  <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
+                                  <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
+                                  <div class="quotes__upvotes"> 
+                                    <button class="quotes__btn" type="button"><span class="quotes__btn-span">🚀</span> 59 718</button>
+                                  </div>
+                                </div>
+                                <div class="quotes__item"> 
+                                  <div class="quotes__coins"> 
+                                    <div class="quotes__square"> </div>
+                                    <div class="quotes__texts"> <span class="quotes__subtitle">CoinMooner Token <br></span><span class="quotes__desc">DOXXED</span></div>
+                                  </div>
+                                  <div class="quotes__symbol"> <span class="quotes__symbol-p">MOONER</span></div>
+                                  <div class="quotes__hour"> <span class="quotes__hour-p"><img src="img/quotes-icon-up.svg" alt="" draggable="false" loading="lazy"> 1.65%</span></div>
                                   <div class="quotes__money"> <span class="quotes__p">$30,940.19</span></div>
                                   <div class="quotes__calendar"> <span class="quotes__p">4 months ago</span></div>
                                   <div class="quotes__upvotes"> 
@@ -688,7 +778,7 @@
               </div>
             </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js?_v=20220509160801"> </script>
-    <script src="js/app.min.js?_v=20220509160801">  </script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js?_v=20220509192942"> </script>
+    <script src="js/app.min.js?_v=20220509192942">  </script>
   </body>
 </html>

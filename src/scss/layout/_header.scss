@@ -79,6 +79,7 @@
             transition: 300ms ease-out;
             opacity: 0;
             visibility: hidden;
+            overflow: hidden;
             &-title{
                 color: #818ea2;
                 font-size: 14px;

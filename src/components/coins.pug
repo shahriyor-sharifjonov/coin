@@ -8,16 +8,24 @@ mixin coins()
                 .coins__list-container
                     .coins__list 
                         button(type="button" data-target="hot").coins__item.change-content.active #[img(src="@img/coins-icon-1.svg", alt="" draggable="false" loading="lazy")] Today’s Hot
-                        button(type="button" data-target="new").coins__item.change-content #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
+
+
+                        .coins__drop
+                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
+                            .coins__drop-content                                                                                                          
+                                button(type="button" data-target="new").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
+                                button(type="button" data-target="recently").coins__drop-item.change-content.coins__item #[img(src="@img/prices-img-3.svg", alt="" draggable="false" loading="lazy")] Recently Added
+
+
                         button(type="button" data-target="best").coins__item.change-content #[img(src="@img/coins-icon-3.svg", alt="" draggable="false" loading="lazy")] All Time Best
                         button(type="button" data-target="gainer").coins__item.change-content #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
-                form(action="").header__form
-                    input(type="text" placeholder="Search").header__input
-                    button(type="submit")
-                        img(src="@img/header-icon-search.svg", alt="" draggable="false" loading="lazy")
-            .quotes__content 
-                .quotes__header 
-                    ul.quotes__list
+                form(action="").header__form 
+                    input(type="text" placeholder="Search").header__input 
+                    button(type="submit") 
+                        img(src="@img/header-icon-search.svg", alt="" draggable="false" loading="lazy")  
+            .quotes__content  
+                .quotes__header  
+                    ul.quotes__list  
                         li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Promoted coins 
                         li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
                         li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
@@ -34,11 +42,18 @@ mixin coins()
                 .quotes__items.change-target#new 
                     +item 
                     +item-red
+                .quotes__items.change-target#recently 
+                    +item 
+                    +item-red
+                    +item
+                    +item
+                    +item
+                    +item
                 .quotes__items.change-target#best 
                     +item
                     +item
                     +item
-                    +item
+                    +item 
                 .quotes__items.change-target#gainer 
                     +item
                     +item
