@@ -1,0 +1,95 @@
+.top{
+    background: #1C2438;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    @include media(992){
+        display: none;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        flex-wrap: wrap;
+    }
+    &__li{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 19px;
+        color: #C6C8CD;
+        display: flex;
+        align-items: center;
+        @include media(1200){
+            font-weight: 400;
+        }
+        picture{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+        }
+        &.up{
+            img{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    &__span{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #5F86FB;
+        @include media(1200){
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+    &__dropdown{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: flex-start;
+        position: relative;
+        &-top{
+            display: flex;
+            column-gap: 4px;
+            align-items: center;
+        }
+        &-img{
+            line-height: 0;
+            transform: scale(0.8);
+        }
+        &-content{
+            position: absolute;
+            left: 50%;
+            top: 100%;   
+            transform: translateX(calc(-50% - 7px));
+            transition: 300ms ease-out;
+            padding-top: 10px;
+            z-index: 1;
+            display: none;
+            background: #151B29;
+            padding: 5px 12px;
+            border-radius: 6px;
+            box-shadow: 0 0 15px #151b29;
+            top: 120%;
+            &.active{
+                display: block;
+            }
+        }
+        &-arrow{
+            transition: 300ms ease-out;
+            &.active{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}

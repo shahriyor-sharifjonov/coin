@@ -1,0 +1,69 @@
+mixin item()
+    .quotes__item 
+        .quotes__coins 
+            .quotes__square 
+            .quotes__texts 
+                span.quotes__subtitle CoinMooner Token #[br]
+                span.quotes__desc DOXXED
+        .quotes__symbol 
+            span.quotes__symbol-p MOONER
+        .quotes__hour 
+            span.quotes__hour-p #[img(src="@img/quotes-icon-up.svg", alt="" draggable="false" loading="lazy")] 1.65%
+        .quotes__money 
+            span.quotes__p $30,940.19
+        .quotes__calendar 
+            span.quotes__p 4 months ago
+        .quotes__upvotes 
+            button(type="button").quotes__btn #[span.quotes__btn-span 🚀] 59 718
+
+mixin item-red()
+    .quotes__item 
+        .quotes__coins 
+            .quotes__square 
+            .quotes__texts 
+                span.quotes__subtitle CoinMooner Token #[br]
+                span.quotes__desc DOXXED
+        .quotes__symbol 
+            span.quotes__symbol-p MOONER
+        .quotes__hour 
+            span.quotes__hour-p.red  
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.25 8.5C6.25 8.63807 6.13807 8.75 6 8.75C5.86193 8.75 5.75 8.63807 5.75 8.5L6.25 8.5ZM5.75 1.5C5.75 1.36193 5.86193 1.25 6 1.25C6.13807 1.25 6.25 1.36193 6.25 1.5L5.75 1.5ZM5.75 8.5L5.75 1.5L6.25 1.5L6.25 8.5L5.75 8.5Z" fill="#E53B35"/>
+                    <path d="M6.21437 10.6427L7.13652 9.1058C7.29649 8.83919 7.10444 8.5 6.79352 8.5L5.20648 8.5C4.89556 8.5 4.70351 8.83919 4.86348 9.1058L5.78563 10.6427C5.88273 10.8045 6.11727 10.8045 6.21437 10.6427Z" fill="#E53B35"/>
+                </svg>
+                | 1.65%
+        .quotes__money 
+            span.quotes__p $30,940.19
+        .quotes__calendar 
+            span.quotes__p 4 months ago
+        .quotes__upvotes 
+            button(type="button").quotes__btn #[span.quotes__btn-span 🚀] 59 718
+
+mixin content()
+    .quotes__content
+        .quotes__header 
+            ul.quotes__list
+                li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Promoted coins 
+                li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
+                li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
+                li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
+                li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
+                li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+        .quotes__items 
+            +item
+            +item
+            +item
+            +item
+            +item
+            +item
+
+mixin quotes()
+    .quotes 
+        .quotes__body.container 
+            .quotes__top 
+                h2.quotes__title.title Cryptocurrency Quotes
+                button(type="button").quotes__button Update
+                    img(src="@img/quotes-icon-update.svg", alt="" draggable="false" loading="lazy")
+            +content
+                        
+
