@@ -1519,8 +1519,6 @@ html.dark .quotes__symbol-p {
 }
 
 .coins__drop-item {
-  background: #8d99AE50;
-  width: 187px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
