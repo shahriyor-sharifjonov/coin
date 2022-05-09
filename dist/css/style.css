@@ -1472,9 +1472,8 @@ html.dark .quotes__symbol-p {
 .coins__list-container {
   width: calc(100% + 30px);
   margin-left: -15px;
-  overflow-x: auto;
-  padding-bottom: 200px;
-  margin-bottom: -200px;
+  padding-bottom: 400px;
+  margin-bottom: -400px;
 }
 
 .coins__list-container::-webkit-scrollbar {
@@ -3184,6 +3183,10 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .coins__list-container {
+    overflow-x: auto;
   }
 
   .coins__item {

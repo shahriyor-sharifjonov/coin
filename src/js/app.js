@@ -167,7 +167,6 @@ changeBtn.forEach(el => {
       defaults.forEach(el => {
         el.classList.remove('default');
       });
-      console.log(el);
       el.classList.add('default');
     }
     const target = el.getAttribute('data-target'); 
@@ -190,6 +189,17 @@ cDrop.forEach(drop => {
       content.classList.remove('active')
     })
     document.getElementById(target).classList.add('active');
+  })
+})
+
+window.addEventListener('click', e => {
+  cDrop.forEach(drop => {
+    if(drop.classList.contains('active')){
+      if(!e.target.classList.contains('coins__drop-btn')){
+        const content = drop.parentElement.querySelector('.coins__drop-content');
+        content.classList.remove('active');
+      }
+    }
   })
 })
 

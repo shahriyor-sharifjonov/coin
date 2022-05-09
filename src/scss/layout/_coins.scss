@@ -43,11 +43,13 @@
         &-container{
             width: calc(100% + 30px);
             margin-left: -15px;
-            overflow-x: auto;
-            padding-bottom: 200px;
-            margin-bottom: -200px;
+            padding-bottom: 400px;
+            margin-bottom: -400px;
             &::-webkit-scrollbar { 
                 display: none; 
+            }
+            @include media(576){
+                overflow-x: auto;   
             }
         }
         @include media(768){

@@ -18,7 +18,17 @@ mixin coins()
 
 
                         button(type="button" data-target="best").coins__item.change-content #[img(src="@img/coins-icon-3.svg", alt="" draggable="false" loading="lazy")] All Time Best
-                        button(type="button" data-target="gainer").coins__item.change-content #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
+
+
+                        .coins__drop
+                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
+                            .coins__drop-content                                                                                                          
+                                button(type="button" data-target="gainer24h").coins__drop-item.change-content.coins__item.default 24h Gainer
+                                button(type="button" data-target="gainer1h").coins__drop-item.change-content.coins__item 1h Gainer
+                                button(type="button" data-target="loser24h").coins__drop-item.change-content.coins__item.default 24h Losers
+                                button(type="button" data-target="loser1h").coins__drop-item.change-content.coins__item 1h Losers
+
+
                 form(action="").header__form 
                     input(type="text" placeholder="Search").header__input 
                     button(type="submit") 
@@ -54,10 +64,29 @@ mixin coins()
                     +item
                     +item
                     +item 
-                .quotes__items.change-target#gainer 
+                .quotes__items.change-target#gainer24h 
                     +item
                     +item
                     +item
                     +item
                     +item
+                .quotes__items.change-target#gainer1h 
+                    +item
+                    +item
+                    +item
+                    +item
+                    +item
+                    +item
+                    +item
+                .quotes__items.change-target#loser24h 
+                    +item-red
+                    +item-red
+                    +item-red
+                .quotes__items.change-target#loser1h 
+                    +item-red
+                    +item-red
+                    +item-red
+                    +item-red
+                    +item-red
+                    +item-red
             a(href="#!").coins__btn Show More 
