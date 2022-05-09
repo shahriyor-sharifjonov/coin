@@ -1497,7 +1497,7 @@ html.dark .quotes__symbol-p {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  max-width: 100vw;
+  max-width: calc(100vw - 30px);
   z-index: 50;
   background: #192233;
   border-radius: 6px;
@@ -2832,6 +2832,14 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
     row-gap: 24px;
+  }
+
+  .coins__drop-content.lg-float-right {
+    right: 0;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    left: auto;
   }
 
   .mooner__top {
