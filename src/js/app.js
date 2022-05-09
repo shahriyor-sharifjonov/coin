@@ -147,20 +147,22 @@ const changeBtn = document.querySelectorAll('.change-content');
 const changeContent = document.querySelectorAll('.change-target');
 changeBtn.forEach(el => {
   el.addEventListener('click', e => {
-    document.querySelectorAll('.coins__drop-content.active').forEach(content => {
-      content.classList.remove('active');
-      document.querySelector('.coins__items').classList.remove('toggled');
-    })
     if(el.classList.contains('coins__drop-item')){
       const parent = el.parentElement;
       const btn = el.parentElement.parentElement.querySelector('.coins__drop-btn');
       btn.classList.add('active');
-      el.parentElement.classList.remove('active');
       const defaults = parent.querySelectorAll('.coins__item.default');
       defaults.forEach(el => {
         el.classList.remove('default');
       });
       el.classList.add('default');
+    }
+    else{
+      if(document.querySelector('.coins__drop-content.active')){
+        const item = document.querySelector('.coins__drop-content.active');
+        item.classList.remove('active');
+        document.querySelector('.coins__items').classList.remove('toggled');
+      }
     }
     const target = el.getAttribute('data-target'); 
     changeContent.forEach(content => {
@@ -187,18 +189,6 @@ cDrop.forEach(drop => {
       content.classList.remove('active')
     })
     document.getElementById(target).classList.add('active');
-  })
-})
-
-window.addEventListener('click', e => {
-  cDrop.forEach(drop => {
-    if(drop.classList.contains('active')){
-      if(!e.target.classList.contains('coins__drop-btn')){
-        document.querySelector('.coins__items').classList.remove('toggled');
-        const content = drop.parentElement.querySelector('.coins__drop-content');
-        content.classList.remove('active');
-      }
-    }
   })
 })
 
