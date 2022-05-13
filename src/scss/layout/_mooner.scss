@@ -27,6 +27,7 @@
         column-gap: 14px;
         cursor: pointer;
         img{
+            max-height: 70px;
             @include media(576){
                 width: 45px;
             }
