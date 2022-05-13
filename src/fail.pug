@@ -1,0 +1,28 @@
+doctype html
+html(lang="en").dark
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/top 
+            +top 
+            include components/header 
+            +header
+            include components/menu 
+            +menu
+            .main 
+                .fail
+                    .fail__body.container 
+                        .fail__img 
+                            img(src="@img/fail-img.png", alt="")
+                        h2.fail__title It's not ready yet
+                        p.fail__desc We are adding a lot of new and useful features, please wait, very soon everything will be ready
+                        a(href="index.html").fail__btn Back
+            include components/footer 
+            +footer
+        script(src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js") 
+        script(src="js/app.min.js")

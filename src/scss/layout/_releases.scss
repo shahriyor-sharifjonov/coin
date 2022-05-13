@@ -1,0 +1,96 @@
+.releases{
+    padding-top: 16px;
+    padding-bottom: 100px;
+    &__back{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 38px;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+    }
+    &__content{
+        background: #191F30;
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px 18px 20px 18px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 3px;
+    }
+    &__desc{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #C6C8CD;
+    }
+    &__span{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FFFFFF;
+        background: #F39C12;
+        box-shadow: -10px 10px 24px rgba(243, 156, 18, 0.5);
+        border-radius: 8px;
+        width: 120px;
+        height: 37px;
+    }
+    &__p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 200%;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+    &__li{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        position: relative;
+        padding-left: 14px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+    }
+}

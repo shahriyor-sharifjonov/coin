@@ -1,0 +1,36 @@
+doctype html
+html(lang="en").dark
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/top 
+            +top 
+            include components/header 
+            +header
+            include components/menu 
+            +menu
+            .main 
+                .releases 
+                    .releases__body.container 
+                        a(href="index.html").releases__back #[img(src="@img/relases-icon.svg", alt="" draggable="false" loading="lazy")] Back to main
+                        h2.releases__title #[img(src="@img/releases-icon-1.svg", alt="" draggable="false" loading="lazy")] CoinLogotype Releases & Updates 
+                        .releases__content 
+                            .releases__top
+                                .releases__top-content
+                                    p.releases__subtitle We've made some updates to permissions
+                                    p.releases__desc Monday, April 25, 2022
+                                span.releases__span IN WORK
+                            p.releases__p These fixes improve the user experience for users who only have access to the branch, so that they can more effectively work within the branch and are less likely to face errors
+                            ul.releases__list 
+                                li.releases__li Users with access to a branch will now be given view access to the main file.
+                                li.releases__li Users with access to a branch will now be given view access to the main file.
+                                li.releases__li If a user has edit access to a branch, they will also be able to update from Main.
+            include components/footer 
+            +footer
+        script(src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js") 
+        script(src="js/app.min.js")
