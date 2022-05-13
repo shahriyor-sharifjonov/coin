@@ -1959,9 +1959,9 @@ html.dark .quotes__symbol-p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 18px;
 }
 
@@ -2010,6 +2010,11 @@ html.dark .quotes__symbol-p {
   margin-bottom: 64px;
 }
 
+.promote__desc.nobg {
+  background: transparent;
+  padding: 0;
+}
+
 .promote__desc-title {
   font-weight: 700;
   font-size: 24px;
@@ -2054,7 +2059,7 @@ html.dark .quotes__symbol-p {
 }
 
 .promote__package-item {
-  min-height: 437px;
+  min-height: 340px;
   background: #191F30;
   border-radius: 8px;
   display: -webkit-box;
@@ -2096,6 +2101,26 @@ html.dark .quotes__symbol-p {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+  color: #FFFFFF;
+}
+
+.promote__package-item-span {
+  background: #344175;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  height: 50px;
+  width: 260px;
   color: #FFFFFF;
 }
 
@@ -3062,6 +3087,17 @@ button {
     width: 100%;
   }
 
+  .promote__package-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    row-gap: 20px;
+  }
+
   .promote__package-item {
     min-height: 0;
     width: calc(33.3333% - 15px);
@@ -3070,6 +3106,7 @@ button {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 100%;
   }
 
   .promote__package-item-title {
@@ -3171,21 +3208,6 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-
-  .promote__package-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    row-gap: 20px;
-  }
-
-  .promote__package-item {
-    width: 100%;
   }
 
   .promote__offer-row {
