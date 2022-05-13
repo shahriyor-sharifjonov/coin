@@ -3,65 +3,65 @@ mixin coins()
         .coins__body.container 
             .coins__top
                 h2.coins__title.title Coins can be upvoted every 24h
-                button(type="buttom").coins__button Update #[img(src="@img/quotes-icon-update.svg", alt="" draggable="false" loading="lazy")]
+                button(type="buttom").coins__button Update #[img(src="@img/quotes-icon-update.svg", alt="" draggable="false")]
             .coins__items 
                 .coins__list-container
                     .coins__list 
-                        button(type="button" data-target="hot").coins__item.change-content.active #[img(src="@img/coins-icon-1.svg", alt="" draggable="false" loading="lazy")] Today’s Hot
+                        button(type="button" data-target="hot").coins__item.change-content.active #[img(src="@img/coins-icon-1.svg", alt="" draggable="false")] Today’s Hot
 
 
                         .coins__drop
-                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
+                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-2.svg", alt="" draggable="false")] New
                             .coins__drop-content                                                                                                          
-                                button(type="button" data-target="new").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
-                                button(type="button" data-target="recently").coins__drop-item.change-content.coins__item #[img(src="@img/prices-img-3.svg", alt="" draggable="false" loading="lazy")] Recently Added
+                                button(type="button" data-target="new").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-2.svg", alt="" draggable="false")] New
+                                button(type="button" data-target="recently").coins__drop-item.change-content.coins__item #[img(src="@img/prices-img-3.svg", alt="" draggable="false")] Recently Added
 
 
-                        button(type="button" data-target="best").coins__item.change-content #[img(src="@img/coins-icon-3.svg", alt="" draggable="false" loading="lazy")] All Time Best
+                        button(type="button" data-target="best").coins__item.change-content #[img(src="@img/coins-icon-3.svg", alt="" draggable="false")] All Time Best
 
 
                         .coins__drop
-                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
+                            button(type="button").coins__drop-btn.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false")] 24h Gainer
                             .coins__drop-content
-                                button(type="button" data-target="gainer24h").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
-                                button(type="button" data-target="gainer1h").coins__drop-item.change-content.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 1h Gainer
-                                button(type="button" data-target="loser24h").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Losers
-                                button(type="button" data-target="loser1h").coins__drop-item.change-content.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 1h Losers
+                                button(type="button" data-target="gainer24h").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-4.svg", alt="" draggable="false")] 24h Gainer
+                                button(type="button" data-target="gainer1h").coins__drop-item.change-content.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false")] 1h Gainer
+                                button(type="button" data-target="loser24h").coins__drop-item.change-content.coins__item.default #[img(src="@img/coins-icon-4.svg", alt="" draggable="false")] 24h Losers
+                                button(type="button" data-target="loser1h").coins__drop-item.change-content.coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false")] 1h Losers
 
 
                 form(action="").header__form 
                     input(type="text" placeholder="Search").header__input 
                     button(type="submit") 
-                        img(src="@img/header-icon-search.svg", alt="" draggable="false" loading="lazy")  
+                        img(src="@img/header-icon-search.svg", alt="" draggable="false")  
                     .header__form-res 
                         .header__form-res-title COINS - 100
                         a(href="#!").header__form-res-item
                             .header__form-res-item-left
                                 .header__form-res-item-img
-                                    img(src="@img/shiba.png", alt="" draggable="false" loading="lazy") 
+                                    img(src="@img/shiba.png", alt="" draggable="false") 
                                 span.header__form-res-item-title MAMA SHIBA
                             span.header__form-res-item-short MAMA
                         a(href="#!").header__form-res-item
                             .header__form-res-item-left
                                 .header__form-res-item-img
-                                    img(src="@img/shiba.png", alt="" draggable="false" loading="lazy") 
+                                    img(src="@img/shiba.png", alt="" draggable="false") 
                                 span.header__form-res-item-title MAMA SHIBA
                             span.header__form-res-item-short MAMA
                         a(href="#!").header__form-res-item
                             .header__form-res-item-left 
                                 .header__form-res-item-img 
-                                    img(src="@img/shiba.png", alt="" draggable="false" loading="lazy") 
+                                    img(src="@img/shiba.png", alt="" draggable="false") 
                                 span.header__form-res-item-title MAMA SHIBA 
                             span.header__form-res-item-short MAMA 
             .quotes__content.change-target.active#hot  
                 .quotes__header  
                     ul.quotes__list  
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item-red
                     +item-red
@@ -72,24 +72,24 @@ mixin coins()
             .quotes__content.change-target#new 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item 
                     +item-red
             .quotes__content.change-target#recently 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item 
                     +item-red
@@ -100,12 +100,12 @@ mixin coins()
             .quotes__content.change-target#best 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item
                     +item
@@ -114,12 +114,12 @@ mixin coins()
             .quotes__content.change-target#gainer24h 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 24h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 24h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item
                     +item
@@ -129,12 +129,12 @@ mixin coins()
             .quotes__content.change-target#gainer1h 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item
                     +item
@@ -146,12 +146,12 @@ mixin coins()
             .quotes__content.change-target#loser24h 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 24h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 24h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item-red
                     +item-red
@@ -159,12 +159,12 @@ mixin coins()
             .quotes__content.change-target#loser1h 
                 .quotes__header 
                     ul.quotes__list 
-                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Asset
-                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                        li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Asset
+                        li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                        li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                        li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                        li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                        li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
                 .quotes__items 
                     +item-red
                     +item-red

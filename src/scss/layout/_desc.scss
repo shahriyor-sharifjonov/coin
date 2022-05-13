@@ -8,9 +8,40 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+        @include media(768){
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: flex-start;
+        }
         @include media(576){
             margin-bottom: 15px;
         }
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 12px;
+        @include media(768){
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 12px;
+        }
+    }
+    &__icon{
+        min-height: 50px;
+        background: #3861FB;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        border-radius: 8px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 25px;
+        column-gap: 9px;
     }
     &__content{
         display: flex;

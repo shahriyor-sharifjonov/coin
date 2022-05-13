@@ -3,13 +3,17 @@ mixin desc()
         .desc__body.container 
             .desc__top 
                 h2.desc__title.title Description
-                .header__icons 
-                    a(href="https://telegram.com").header__icon
-                        img(src="@img/header-icon-twitter.svg", alt="" draggable="false" loading="lazy")
-                    a(href="https://twitter.com").header__icon
-                        img(src="@img/header-icon-telegram.svg", alt="" draggable="false" loading="lazy")
-                    a(href="https://discord.com").header__icon
-                        img(src="@img/header-icon-discord.svg", alt="" draggable="false" loading="lazy")
+                .desc__icons 
+                    a(href="#!").desc__icon Website
+                    a(href="https://telegram.com").desc__icon
+                        img(src="@img/header-icon-twitter.svg", alt="" draggable="false")
+                        | Twitter
+                    a(href="https://twitter.com").desc__icon
+                        img(src="@img/header-icon-telegram.svg", alt="" draggable="false")
+                        | Telegram
+                    a(href="https://discord.com").desc__icon
+                        img(src="@img/header-icon-discord.svg", alt="" draggable="false")
+                        | Reddit
             .desc__content 
                 p.desc__p Hey hey! CoinMooner team here! We have awesome news and an amazing investment opportunity.
                 p.desc__p A bit more than 5 months have passed since the launch of CoinMooner and we continue to expand during this time and constantly evolve. No one knew us at first but already in first 2 months we managed to achieve great success and build a well-known brand in the crypto community. In as little as 3 months, according to the Cloudflare data, we went from 0 to 1 million unique users per month and currently averaging 25 000 - 60 000 unique visitors daily. We are constantly developing new features, implementing new ideas, partnerships thus we are constantly growing.
@@ -23,5 +27,5 @@ mixin desc()
                 p.desc__p Check out more information and our ambitious roadmap here: #[a(href="https://coinmooner.com/token").desc__a https://coinmooner.com/token] 
                 p.desc__p We're waiting for you to join our great CoinMooner party! 💙🙌
             .desc__bottom 
-                button(type="button").desc__btn.vote-btn #[img(src="@img/desc-icon-fire.svg", alt="" draggable="false" loading="lazy" style="pointer-events: none")] #[span(style="pointer-events: none") Vote]
+                button(type="button").desc__btn.vote-btn #[img(src="@img/desc-icon-fire.svg", alt="" draggable="false" style="pointer-events: none")] #[span(style="pointer-events: none") Vote]
                 p.desc__info You can vote once every 24 hours 

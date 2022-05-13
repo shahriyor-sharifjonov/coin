@@ -8,7 +8,7 @@ mixin item()
         .quotes__symbol 
             span.quotes__symbol-p MOONER
         .quotes__hour 
-            span.quotes__hour-p #[img(src="@img/quotes-icon-up.svg", alt="" draggable="false" loading="lazy")] 1.65%
+            span.quotes__hour-p #[img(src="@img/quotes-icon-up.svg", alt="" draggable="false")] 1.65%
         .quotes__money 
             span.quotes__p $30,940.19
         .quotes__calendar 
@@ -43,12 +43,12 @@ mixin content()
     .quotes__content
         .quotes__header 
             ul.quotes__list
-                li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false" loading="lazy")] Promoted coins 
-                li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false" loading="lazy")] Symbol
-                li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false" loading="lazy")] 1h
-                li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false" loading="lazy")] Market Cap
-                li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false" loading="lazy")] Launch
-                li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false" loading="lazy")] Upvotes
+                li.quotes__li.quotes__li_coins #[img(src="@img/quotes-icon-diamond.svg", alt="" draggable="false")] Promoted coins 
+                li.quotes__li.quotes__li_symbol #[img(src="@img/quotes-icon-symbol.svg", alt="" draggable="false")] Symbol
+                li.quotes__li.quotes__li_hour #[img(src="@img/quotes-icon-statistic.svg", alt="" draggable="false")] 1h
+                li.quotes__li.quotes__li_dollar #[img(src="@img/quuotes-icon-dollar.svg", alt="" draggable="false")] Market Cap
+                li.quotes__li.quotes__li_calendar #[img(src="@img/quotes-icon-calendar.svg", alt="" draggable="false")] Launch
+                li.quotes__li.quotes__li_upvotes #[img(src="@img/quotes-icon-upvotes.svg", alt="" draggable="false")] Upvotes
         .quotes__items 
             +item
             +item
@@ -63,7 +63,7 @@ mixin quotes()
             .quotes__top 
                 h2.quotes__title.title Cryptocurrency Quotes
                 button(type="button").quotes__button Update
-                    img(src="@img/quotes-icon-update.svg", alt="" draggable="false" loading="lazy")
+                    img(src="@img/quotes-icon-update.svg", alt="" draggable="false")
             +content
                         
 
