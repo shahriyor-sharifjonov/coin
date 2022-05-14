@@ -2112,7 +2112,7 @@ html.dark .quotes__symbol-p {
 }
 
 .promote__package-item {
-  min-height: 340px;
+  min-height: 400px;
   background: #191F30;
   border-radius: 8px;
   display: -webkit-box;
