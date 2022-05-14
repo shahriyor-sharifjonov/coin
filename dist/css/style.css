@@ -2327,6 +2327,15 @@ html.dark .quotes__symbol-p {
   margin-bottom: 45px;
 }
 
+.popup__p a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.popup__p a:hover {
+  text-decoration: underline;
+}
+
 .popup__btn {
   background: #3861FB;
   border-radius: 8px;
