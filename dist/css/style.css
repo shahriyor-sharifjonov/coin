@@ -674,6 +674,22 @@
   position: relative;
 }
 
+.cards__img {
+  width: 100%;
+  padding-bottom: 56.25%;
+  cursor: pointer;
+  position: relative;
+}
+
+.cards__img img {
+  position: absolute;
+  toP: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 .cards .swiper {
   width: 100%;
   overflow: hidden;
@@ -696,17 +712,6 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-
-.cards .swiper-slide {
-  width: 100%;
-  cursor: pointer;
-}
-
-.cards .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
 }
 
 .cards .swiper-pagination {
