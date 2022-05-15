@@ -34,16 +34,22 @@
     }
     &__img{
         width: 100%;
-        padding-bottom: 56.25%;
         cursor: pointer;
         position: relative;
+        height: 135px;
+        @include media(576){
+            padding-bottom: 56.25%;
+            height: auto;
+        }
         img{
-            position: absolute;
-            toP: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border-radius: 8px;
+            @include media(576){
+                position: absolute;
+                toP: 0;
+                left: 0;
+            }
         }
     }
     .swiper{

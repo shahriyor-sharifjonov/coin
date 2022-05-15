@@ -101,6 +101,13 @@
                 }
             }
         }
+        &-img{
+            width: 100px;
+            margin-top: 20px;
+            img{
+                width: 100%;
+            }
+        }
     }
     &__desc{
         background: #191F30;
@@ -233,6 +240,7 @@
                 bottom: 28px;
                 left: 18px;
                 line-height: 0;
+                width: 100px;
                 @include media(992){
                     position: static;
                     margin-left: auto;
@@ -241,6 +249,7 @@
                 }
                 img{
                     line-height: 0;
+                    width: 100%;
                 }
             }
         }
