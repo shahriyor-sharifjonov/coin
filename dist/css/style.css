@@ -1970,6 +1970,15 @@ html.dark .quotes__symbol-p {
   margin-bottom: 38px;
 }
 
+.promote__img {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.promote__img img {
+  width: 100%;
+}
+
 .promote__title {
   font-weight: 700;
   font-size: 24px;
@@ -3605,6 +3614,10 @@ button {
 
   .desc__info {
     font-size: 14px;
+  }
+
+  .promote__img {
+    margin-bottom: 30px;
   }
 
   .promote__title {

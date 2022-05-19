@@ -11,6 +11,16 @@
         color: #FFFFFF;
         margin-bottom: 38px;
     }  
+    &__img{
+        width: 100%;
+        margin-bottom: 64px;
+        @include media(576){
+            margin-bottom: 30px;
+        }
+        img{
+            width: 100%;
+        }
+    }
     &__title{
         font-weight: 700;
         font-size: 24px;
